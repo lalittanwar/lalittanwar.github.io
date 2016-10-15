@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <style type="text/css">
-
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 html
 {
     padding: 0px 0px 0px 0px;
@@ -10,34 +10,70 @@ body
 {
     margin : 0px 0px 0px 0px;
 }
-@import url('https://fonts.googleapis.com/css?family=Pacifico')
-h1
-{   
-    font-family:'pacifico',cursive;
-    color:#ECEE46;
-    font-size:350%;
-    text-align:center;
-   
 
+#main h1
+{   
+    font-family:'Pacifico',cursive;
+    color:#F3AB19;
+    font-size:500%;
+    text-align:center;
 }
-h2
+#hed2
 {   
     font-family:Georgia;
-    color:#1C2833;
+    color:#f7484e;
+    font-size:300%;
+    text-align:center
+
+}
+#hed3
+{   
+    font-family:Georgia;
+    color:#F39C12;
     font-size:300%;
     text-align:center
 }
-p{
+.p1{
     text-align:center;
-    color: yellow;
+    color: #f7484e;
     font-family: courier;
+    font-size: 160%;
+}
+.p2  {
+    text-align:center;
+    color: #1C2833;
+    font-family: courier;
+    font-size: 160%;
+}
+.p3 {
+    text-align:center;
+    color: #EAE840;
+    font-family: Comic Sans MS;
+    font-size: 160%;
+}
+.p4 {
+    text-align:center;
+    color: #7B241C;
+    font-family: Verdana;
+    font-size: 160%;
+}
+.p5 {
+    text-align:center;
+    color: #JH1281;
+    font-family: Verdana;
+    font-size: 160%;
+}
+.p6{
+    text-align:right;
+    color: #2E86C1;
+    font-family: Comic Sans MS;
     font-size: 140%;
 }
-p1  {
-    text-align:left;
-    color: #4ADAD6;
-    font-family: courier;
-    font-size: 140%;
+.p7{
+    text-align:right;
+    color: red;
+    font-family: Comic Sans MS;
+    font-size: 120%;
 }
 #first {
     background-image: url("./static/vicky21.jpg");
@@ -70,11 +106,10 @@ p1  {
     background-color: white;
     width : 50%;
     float: right;
+     display: flex;
+    justify-content: center;
 }
-.vertical-middle
-{
-    align-self: center;
-}
+
 #right1
 {
     min-height: 660px;
@@ -108,16 +143,58 @@ p1  {
     background-color: #F5B041;
     width : 50%;
     float: left;
-    display: flex;
+    display: flex;*/
+    justify-content: center;*/
+}
+.vertical-middle
+{
+    align-self: center;
+
+}
+.flex
+{	align-self: center;
+	margin: 0 auto;
     justify-content: center;
+    text-align: center;
+}
+#bottom
+{	
+	position: absolute;
+	bottom: 0px;
+}
+#top
+{
+	position: absolute;
+	top: 0px;
+	right: 15px;
+	text-align: right;
+
+}
+#right_down
+{
+	position: absolute;
+	bottom: 0px;
+	right: 15px;
 }
 </style>
 
 <body>
+
 <div id="first">
-     <h1> LALIT TANWAR</h1>
-    
+	<div id="main">
+     <h1> -: Lalit Tanwar :-</h1>
+    </div> 
+     <div id="bottom">
+	<p class ="p3"> Home | Work | Contact</p>
+	</div>
+	<div id="right_down">
+	<p class="p7"> Scroll down for more</p>
+	</div>
+	<div id="top">
+	<p class="p6"><b>lalittanwar.github.io</b></p>
+	</div>
 </div>
+
  <!-- <div id="second"> -->
     <div id="left">
         <div class="vertical-middle">
@@ -125,16 +202,30 @@ p1  {
         </div>
     </div>
     <div id="right">
-    <h2>Vicky</h2>
+
+     <div class ="flex">
+    <h1 id ="hed2">Vicky</h1>
+    <p class ="p1"><b>Study at MNIT</b></p>
+    <p class ="p1"><b>Coder</b></p>
+    <p class ="p1"><b>Designer</b></p>
+    </div>
     </div>
 </div>
- <!-- <div id="third"> -->
+ <!-- <div id="third">  -->
+    <div id="right1">
+    
+    <div class="flex">
+    <h1 id ="hed3">Developed</h1>
+    <p class ="p3"><b>-Personal Portfolio website</b></p>
+    <p class ="p3"><b>-Library management sysytem in c++</b></p>
+    <p class ="p3"><b>-Motor boat</b></p>
+ 	</div>
+
+    </div>
     <div id="left1">
-        <div class="vertical-middle">
+    <div class="vertical-middle">
         <img src="./static/Work.svg">
         </div>
-    </div>
-    <div id="right1">
     </div>
      <div id="left2">
         <div class="vertical-middle">
@@ -142,6 +233,15 @@ p1  {
         </div>
     </div>
     <div id="right2">
+     <div class ="flex">
+     <p class ="p4"><b>Github-id</b></p>
+    <p class ="p5">lalittanwar.github.io</p>
+    <p class ="p4"><b>Email-id</b></p>
+    <p class ="p5">lalit.tanwar258@gmail.com</p>
+     <p class ="p4"><b>Contact</b></p>
+    <p class ="p5">+91-9829384111</p>
+    <p class="p5">+91-7610922450</p>
+    </div>
     </div>
 
 </div>
